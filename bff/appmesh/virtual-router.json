@@ -1,0 +1,9 @@
+{
+  "meshName": "appmesh-test",
+  "spec": {
+    "serviceNames": [
+      "bff-service.default.svc.cluster.local"
+    ]
+  },
+  "virtualRouterName": "bff"
+}

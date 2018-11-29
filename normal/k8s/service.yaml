@@ -1,0 +1,12 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: normal-service
+spec:
+  type: NodePort
+  selector:
+    app: normal
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 80

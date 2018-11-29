@@ -1,0 +1,23 @@
+{
+  "meshName": "appmesh-test",
+  "spec": {
+    "backends": [
+      "normal-service.default.svc.cluster.local",
+      "error-service.default.svc.cluster.local"
+    ],
+    "listeners": [
+      {
+        "portMapping": {
+          "port": 80,
+          "protocol": "http"
+        }
+      }
+    ],
+    "serviceDiscovery": {
+      "dns": {
+        "serviceName": "bff-service.default.svc.cluster.local"
+      }
+    }
+  },
+  "virtualNodeName": "bff"
+}

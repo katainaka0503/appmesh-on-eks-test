@@ -1,0 +1,9 @@
+{
+  "meshName": "appmesh-test",
+  "spec": {
+    "serviceNames": [
+      "error-service.default.svc.cluster.local"
+    ]
+  },
+  "virtualRouterName": "error"
+}

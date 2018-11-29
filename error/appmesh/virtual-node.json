@@ -1,0 +1,20 @@
+{
+  "meshName": "appmesh-test",
+  "spec": {
+    "backends": [],
+    "listeners": [
+      {
+        "portMapping": {
+          "port": 80,
+          "protocol": "http"
+        }
+      }
+    ],
+    "serviceDiscovery": {
+      "dns": {
+        "serviceName": "error-service.default.svc.cluster.local"
+      }
+    }
+  },
+  "virtualNodeName": "error"
+}
